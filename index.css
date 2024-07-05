@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+.rubik-moonrocks-regular {
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.navbar {
+    height: 80px; /* Adjust the height as needed */
+    position: sticky; /* Make the navbar sticky */
+    width: 100vw;
+    top: 0; /* Stick to the top */
+    z-index: 1020; /* Ensure it stays above other content */
+}
+.navbar-nav {
+    gap: 10vw; /* Gap between nav links */
+}
+.custom-navbar {
+    background-color: #040F1C; /* Replace with your desired color code */
+
+}
+.hero-section {
+    position: relative;
+    overflow: hidden;
+  
+    height: 120vh; /* Full viewport height minus navbar height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Text color */
+    width: 100vw;
+}
+.hero-section .container {
+    position: relative;
+    width: 100vw;
+    z-index: 0; /* Ensure text is above the image */
+    margin-top: -20vh; /* Adjust top margin to vertically center */
+}
+.hero-section img.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; /* Move behind the text */
+}
+.hero-section .logos {
+    position: absolute;
+    margin-top: 50vh;
+    top: 10vh; /* Adjust as needed */
+    left: 5vw; /* Adjust as needed */
+    display: flex;
+    flex-direction: column; /* Align logos vertically */
+    gap: 1rem; /* Space between logos */
+}
+.hero-section .logos img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+}
+.text-decorate {
+    font-size: 10vh; /* Large font size */
+    text-shadow: 0 0 4px white; /* White shadow for glow effect */
+    width: 80vw; /* Cover 80% of viewport width */
+    margin: 0 auto; /* Center the text horizontally */
+    font-weight: 800;
+}
+.custom-button {
+    font-size: 3vh; /* Adjust button font size */
+    color: white;
+    border-radius: 2rem white;
+    margin-top: 10vh; /* Adjust top margin to position the button */
+}
+.custom-button:hover {
+    text-shadow: 0 0 4px #FDEE6F;
+    color: #FDEE6F; /* Change to yellow when hovered */
+}
+.Timeline-Section {
+    width: 100vw;
+    height: calc(80vh + 30vh); /* Increase height by 10vh */
+    background-color: #040F1C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* To make sure the text is visible on black background */
+    padding-top: 10vh; /* Ensure a gap between hero section and schedule text */
+    position: relative;
+}
+.timeline-heading {
+    position: absolute;
+    top: 5vh; /* Position the heading 5vh from the top of the section */
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.Tracks-Section {
+    width: 100vw;
+    height: 90vh;
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* To make sure the text is visible on dark background */
+    padding-top: 10vh; /* Ensure a gap between sections */
+    position: relative;
+}
+.Timeline-Section .container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically, if needed */
+    position: relative; /* Required for absolutely positioned text */
+    width: 80%; /* Ensure the container takes full width */
+    height: 100%;/* Ensure the container takes full height */
+}
+
+.Timeline-Section img {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Adjust height as needed */
+}
+.img-fluid {
+    width: auto; /* Maintain aspect ratio */
+}
+/* Adjustments for text positioning */
+.custom-translate1, .custom-translate2, .custom-translate3, .custom-translate4 {
+    text-align: center; /* Center the text */
+    line-height: 1.4; /* Increase line height for readability */
+    font-size: 0.9rem; /* Adjust font size as needed */
+    color: white; /* Text color */
+}
+.custom-translate1 {
+    translate: -420% 230%;
+}
+.custom-translate2 {
+    translate: -10% 290%;
+}
+.custom-translate3 {
+    translate: 100% 10%;
+}
+.custom-translate4 {
+    translate: 490% 60%;
+}
+@media (max-width: 1200px) {
+    .custom-translate1, .custom-translate2, .custom-translate3, .custom-translate4 {
+        font-size: 0.7rem; /* Adjust font size for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-translate1, .custom-translate2, .custom-translate3, .custom-translate4 {
+        font-size: 0.6rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-translate1, .custom-translate2, .custom-translate3, .custom-translate4 {
+        font-size: 0.5rem; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-translate1, .custom-translate2, .custom-translate3, .custom-translate4 {
+        font-size: 0.4rem; /* Adjust font size for mobile devices */
+    }
+}
+/* Tracks Section styles */
+.Tracks-Section {
+    background-color: #040F1C;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tracks-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Two-vertical-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+  }
+  
+  .card {
+    width: calc(50% - 2.5vh);
+    background-color: #0A1B35;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2vh;
+  }
+  
+  .large-card {
+    width: calc(50% - 2.5vh);
+    margin-right: 5vh;
+    background-color: #0A1B35;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .large-card .card-body {
+    text-align: center;
+
+}
+  
+  .large-card .card-title {
+    font-size: 8vw; /* Adjust font size to cover the card */
+    margin: 0;
+    margin-top:7vh ;
+    font-family: "Rubik Moonrocks", sans-serif;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .sub-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A1B35;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .sub-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+  }
+.ctm-btn{
+    font-size: xx-large;
+    margin-top: 5vh;
+    color: blueviolet;
+}
+.Partners-Section{
+    background-color: #040F1C;
+}
+.partners-logo{
+    display: flex;
+    gap: 10vh;
+}
+.img-thumbnail{
+    border: none;
+    background-color: #040F1C;
+}
+.footer {
+    background-color: #191919;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Position relative for absolute positioning inside */
+    width: 100vw; /* Ensure footer spans full width */
+    margin-top: auto; /* Ensures footer sticks to bottom */
+    z-index: 3; /* Ensure footer content stays above bottom container */
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* Adjust this value to position the line relative to the text */
+    left: 15vw; /* Adjust to leave 15vw from left */
+    width: 70vw; /* Set width to 70vw */
+    height: 1px;
+    background-color: #fff; /* White line color */
+    z-index: 1; /* Ensure it's above other content */
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust to space evenly */
+    align-items: center;
+    max-width: 70vw; /* Set max width to 70vw */
+    margin: 20px auto; /* Center the container and add margin */
+}
+
+.footer .section {
+    flex: 1;
+    margin: 10px;
+    z-index: 2; /* Ensure sections are above the line */
+}
+
+.footer .section h3 {
+    margin-bottom: 10px;
+}
+
+.footer .section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer .contact-info, .footer .follow-us, .footer .quick-links {
+    flex: 1; /* Equal width for all sections */
+    text-align: left;
+    margin: 0 10px; /* Adjust margin for spacing */
+}
+
+.footer .follow-us img {
+    width: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.footer .hero-hacks {
+    font-size: 8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+    font-family: "Rubik Moonrocks", sans-serif;
+    position: relative; /* Ensure text positioning is relative */
+    z-index: 2; /* Ensure text is above the line */
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+.footer .hero-hacks span {
+    display: block;
+    transform: rotate(-180deg);
+}
+

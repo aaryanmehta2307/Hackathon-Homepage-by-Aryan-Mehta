@@ -11,9 +11,9 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 .navbar {
+    width: 100vw;
     height: 80px; /* Adjust the height as needed */
     position: sticky; /* Make the navbar sticky */
-    width: 100vw;
     top: 0; /* Stick to the top */
     z-index: 1020; /* Ensure it stays above other content */
 }
@@ -31,7 +31,7 @@ body {
 .hero-section {
     position: relative;
     overflow: hidden;
-  
+    width: 100vw;
     height: 120vh; /* Full viewport height minus navbar height */
     display: flex;
     align-items: center;
@@ -42,7 +42,6 @@ body {
 }
 .hero-section .container {
     position: relative;
-    width: 100vw;
     z-index: 0; /* Ensure text is above the image */
     margin-top: -20vh; /* Adjust top margin to vertically center */
 }

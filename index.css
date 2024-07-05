@@ -11,7 +11,6 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 .navbar {
-    width: 100vw;
     height: 80px; /* Adjust the height as needed */
     position: sticky; /* Make the navbar sticky */
     top: 0; /* Stick to the top */
@@ -31,14 +30,13 @@ body {
 .hero-section {
     position: relative;
     overflow: hidden;
-    width: 100vw;
     height: 120vh; /* Full viewport height minus navbar height */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white; /* Text color */
-    width: 100vw;
+   
 }
 .hero-section .container {
     position: relative;
@@ -85,7 +83,6 @@ body {
     color: #FDEE6F; /* Change to yellow when hovered */
 }
 .Timeline-Section {
-    width: 100vw;
     height: calc(80vh + 30vh); /* Increase height by 10vh */
     background-color: #040F1C;
     display: flex;
@@ -94,16 +91,15 @@ body {
     color: white; /* To make sure the text is visible on black background */
     padding-top: 10vh; /* Ensure a gap between hero section and schedule text */
     position: relative;
+    width: 100%;
 }
 .timeline-heading {
     position: absolute;
     top: 5vh; /* Position the heading 5vh from the top of the section */
-    width: 100%;
     text-align: center;
     z-index: 1;
 }
 .Tracks-Section {
-    width: 100vw;
     height: 90vh;
     background-color: #080808;
     display: flex;
@@ -235,7 +231,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 5vh;
-    width: 100%;
     max-width: 1200px;
   }
   
@@ -262,7 +257,6 @@ body {
 }
 
 .Partners-Section {
-    width: 100vw;
     height: 90vh;
     background-color: #040F1C;
     display: flex;
@@ -291,8 +285,7 @@ body {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: relative; /* Position relative for absolute positioning inside */
-    width: 100vw; /* Ensure footer spans full width */
+    position: relative; /* Position relative for absolute positioning inside *//* Ensure footer spans full width */
     margin-top: auto; /* Ensures footer sticks to bottom */
     z-index: 3; /* Ensure footer content stays above bottom container */
 }
